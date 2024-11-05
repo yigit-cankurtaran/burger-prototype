@@ -29,13 +29,13 @@ const RestaurantWebsite = () => {
             <h1 className="text-2xl font-light">Chef's Buffalo Burger</h1>
             <div className="space-x-8 text-sm">
               <a href="#menu" className="hover:text-gray-600 transition">
-                {t("menu")}
+                {t("MENU")}
               </a>
               <a href="#about" className="hover:text-gray-600 transition">
-                {t("about")}
+                {t("ABOUT")}
               </a>
               <a href="#contact" className="hover:text-gray-600 transition">
-                {t("contact")}
+                {t("CONTACT")}
               </a>
             </div>
           </div>
@@ -107,6 +107,32 @@ const RestaurantWebsite = () => {
           ))}
         </div>
       </section>
+
+      <section id="about" className="container mx-auto px-6 py-24 bg-gray-100">
+        <h2 className="text-4xl font-light mb-16 text-center">{t("About Us")}</h2>
+        <div className="text-center max-w-2xl mx-auto">
+          <p className="text-lg font-light mb-4">
+            {t("We are a burger restaurant dedicated to providing the best experience in the city.")}
+          </p>
+          <p className="text-lg font-light">
+            {t("Our chefs use only the freshest ingredients to create mouth-watering dishes that will leave you coming back for more.")}
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" className="container mx-auto px-6 py-24">
+        <h2 className="text-4xl font-light mb-16 text-center">{t("Contact Us")}</h2>
+        <div className="text-center max-w-2xl mx-auto">
+          <p className="text-lg font-light mb-4">
+            {t("Have any questions or feedback? We'd love to hear from you!")}
+          </p>
+          {/* phone number and email address */}
+          <p className="text-lg font-light">phone number</p>
+          <a className="text-green-600" href="mailto:random@mail.com">e-mail</a>
+          <p className="text-pretty text-lg font-extralight">address</p>
+        </div>
+      </section>
+
 
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-6 text-center">
