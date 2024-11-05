@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
@@ -11,6 +11,15 @@ const RestaurantWebsite = () => {
     { url: "../foodpics/gurme.jpg", title: t("Fresh Ingredients") },
     { url: "../foodpics/tavuk.jpg", title: t("Cozy Atmosphere") },
   ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000); // changing slides every 5 seconds
+
+    return () => clearInterval(interval); // cleanup on unmount
+  }, [slides.length]);
+  // changes when slides.length changes
 
   return (
     <div className="min-h-screen bg-white">
@@ -38,7 +47,7 @@ const RestaurantWebsite = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className={`absolute inset-0 transition-opacity duration-1000 
+              className={`absolute inset-0 transition-opacity duration-1000
                 ${index === currentSlide ? "opacity-100" : "opacity-0"}`}
             >
               <img
