@@ -16,9 +16,20 @@ const RestaurantWebsite = () => {
   // ingredients once yemeksepeti reopens
   // then translate them
   const burgers = [
-    { url: "../foodpics/chefsburger.jpg", title: t("Chef's Burger"), description: t("to be updated with the ingredients after yemeksepeti reopens") },
-    { url: "../foodpics/gurme.jpg", title: t("Gourmet Burger"), description: t("Ingredient List") },
-    { url: "../foodpics/tavuk.jpg", title: t("Crispy Chicken Burger"), description: t("Ingredient List") },
+    { url: "../foodpics/chefsburger.jpg", title: t("Chef's Burger"), description: t("testing chef") },
+    { url: "../foodpics/gurme.jpg", title: t("Gourmet Burger"), description: t("testing gourmet") },
+    { url: "../foodpics/tavuk.jpg", title: t("Crispy Chicken Burger"), description: t("testing chicken") },
+    { url: "../foodpics/cheeseburger.jpg", title: t("Cheeseburger"), description: t("testing cheese") },
+    { url: "../foodpics/classicburger.jpg", title: t("Classic Burger"), description: t("testing classic") },
+    { url: "../foodpics/barbecue.jpg", title: t("Barbecue Burger"), description: t("testing barbecue") },
+    { url: "../foodpics/anadolu.jpg", title: t("Anatolia Burger"), description: t("testing anatolia") },
+    { url: "../foodpics/eggy.jpg", title: t("Eggy Burger"), description: t("testing eggy") },
+    { url: "../foodpics/hellim.jpg", title: t("Hellim Burger"), description: t("testing hellim") },
+    { url: "../foodpics/eltoro.jpg", title: t("El Toro Burger"), description: t("testing toro") },
+    { url: "../foodpics/ottoman.jpg", title: t("Ottoman Burger"), description: t("testing ottoman") },
+    { url: "../foodpics/grilled.jpg", title: t("Grilled Chicken Burger"), description: t("testing grilled") },
+
+
     // TODO: more burgers to be added
     // finish their entire menu by hand...
   ];
@@ -149,7 +160,7 @@ const RestaurantWebsite = () => {
 
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-6 text-center">
-          <p className="font-light">&copy; {t("2024 BISTRO. All rights reserved.")}</p>
+          <p className="font-light">&copy; {t("2024 Yiğit Cankurtaran. All rights reserved.")}</p>
         </div>
       </footer>
     </div>

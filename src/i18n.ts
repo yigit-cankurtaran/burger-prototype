@@ -21,7 +21,19 @@ const resources = {
       "Our chefs use only the freshest ingredients to create mouth-watering dishes that will leave you coming back for more.": "Şeflerimiz, sizi tekrar tekrar geri getirecek ağız sulandıran yemekler yaratmak için sadece en taze malzemeleri kullanır.",
       "Contact Us": "Bize Ulaşın",
       "Have any questions or feedback? We'd love to hear from you!": "Herhangi bir sorunuz veya geri bildiriminiz mi var? Sizden haber almak isteriz!",
-      "&copy; 2024 BISTRO. All rights reserved.": "&copy; 2024 BISTRO. Tüm hakları saklıdır."
+      "&copy; 2024 Yiğit Cankurtaran. All rights reserved.": "&copy; 2024 Yiğit Cankurtaran. Tüm hakları saklıdır.",
+      "testing chef": "2 adet Chef\'s Buffalo köftesi, 2 adet cheddar peyniri, karamelize mantar, karamelize soğan, patates kızartması, özel Chef\'s sos",
+      "testing gourmet": "Kömür ateşinde suyu hapsedilerek pişmiş Buffalo köftesi, halka soğan, domates dilimleri, 40 gr. löp antrikot, barbekü sos",
+      "testing chicken": "150 gr. çıtır tavuk but, kıvırcık marul, halka soğan, dilim domatesler, çıtır salatalık turşusu, ranch sos",
+      "testing cheese": "Ev yapımı köfte, kıvırcık, halka soğan, küp domates dilimleri, cheddar peyniri, sos, dilimlenmiş salatalık turşusu, ranch sos",
+      "testing classic": "Chefs köfte, kıvırcık marul, halka soğan, domates dilimleri, salatalık turşusu, ranch sos",
+      "testing barbecue": "Kasap köfte, kasap sucuk, soğan halkaları, iki dilim domates, tatlı kapya biber, barbekü sos",
+      "testing anatolia": "Ev köftesi, kolot peyniri, halka soğan, domates dilimleri, kıvırcık marul, ranch sos",
+      "testing eggy": "Chefs köfte, cheddar peyniri, ranch sos, jambon, yumurta",
+      "testing hellim": "Kömürde demlenerek pişmiş köfte, marul parçaları, soğan halkaları, domates dilimleri, kornişon turşu parçaları, közde kızarmış hellim peyniri, mix sos",
+      "testing toro": "Meksika baharatlarıyla harmanlanmış Chef's köftesi, parçalanmış soğan halkaları, kıvırcık marul, dilim domates, kapya biber jalapeno biber, hot sos",
+      "testing ottoman": "Kasap baton sucuk, kıvırcık marul, domates dilimleri, küp kornişon turşu, halka soğan, kibrit patates cips, ranch sos",
+      "testing grilled": "Mangal tadında 150 gr. ızgara tavuk but, kıvırcık marul, halka soğan, domates dilimleri, kornişon turşu, ranch sos",
     }
   },
   fr: {
@@ -91,7 +103,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'tr',
+    fallbackLng: 'en',
     interpolation: {
       escapeValue: false
     }
