@@ -12,6 +12,17 @@ const RestaurantWebsite = () => {
     { url: "../foodpics/tavuk.jpg", title: t("Cozy Atmosphere") },
   ];
 
+  // TODO: update the descriptions with the actual
+  // ingredients once yemeksepeti reopens
+  // then translate them
+  const burgers = [
+    { url: "../foodpics/chefsburger.jpg", title: t("Chef's Burger"), description: t("to be updated with the ingredients after yemeksepeti reopens") },
+    { url: "../foodpics/gurme.jpg", title: t("Gourmet Burger"), description: t("Ingredient List") },
+    { url: "../foodpics/tavuk.jpg", title: t("Crispy Chicken Burger"), description: t("Ingredient List") },
+    // TODO: more burgers to be added
+    // finish their entire menu by hand...
+  ];
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -85,28 +96,30 @@ const RestaurantWebsite = () => {
         </div>
       </div>
 
+
       <section id="menu" className="container mx-auto px-6 py-24">
         <h2 className="text-4xl font-light mb-16 text-center">{t("Our Menu")}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-          {[1, 2, 3].map((item) => (
+          {burgers.map((burger, index) => (
             <motion.div
-              key={item}
+              key={index}
               whileHover={{ y: -10 }}
               className="bg-gray-50 p-6 rounded-lg"
             >
               <img
-                src={"../foodpics/chefsburger.jpg"}
-                alt={`Dish ${item}`}
+                src={burger.url}
+                alt={burger.title}
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
-              <h3 className="text-xl font-light mb-2">{t("Signature Dish")} {item}</h3>
+              <h3 className="text-xl font-light mb-2">{burger.title}</h3>
               <p className="text-gray-600">
-                {t("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")}
+                {burger.description}
               </p>
             </motion.div>
           ))}
         </div>
       </section>
+
 
       <section id="about" className="container mx-auto px-6 py-24 bg-gray-100">
         <h2 className="text-4xl font-light mb-16 text-center">{t("About Us")}</h2>

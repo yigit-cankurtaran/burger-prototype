@@ -6,7 +6,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 const resources = {
   tr: {
     translation: {
-      "Signature Burgers": "İmza Burgerler",
+      "Signature Burgers": "İkonik Burgerler",
       "Fresh Ingredients": "Taze Malzemeler",
       "Cozy Atmosphere": "Rahat Atmosfer",
       "MENU": "MENÜ",
