@@ -2,7 +2,7 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-// translations aren't working??
+// translations work, just need to delete storage on localhost
 
 const resources = {
   tr: {
@@ -172,7 +172,8 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'tr',
+    fallbackLng: 'en',
+    debug: true,
     interpolation: {
       escapeValue: false
     }
