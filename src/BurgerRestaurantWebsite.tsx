@@ -12,9 +12,6 @@ const RestaurantWebsite = () => {
     { url: "../foodpics/tavuk.jpg", title: t("Cozy Atmosphere") },
   ];
 
-  // TODO: update the descriptions with the actual
-  // ingredients once yemeksepeti reopens
-  // then translate them
   const burgers = [
     { url: "../foodpics/chefsburger.jpg", title: t("Chef's Burger"), description: t("2 pieces of Chef's Buffalo meatballs, 2 pieces of cheddar cheese, caramelized mushrooms, caramelized onions, french fries, special Chef's sauce") },
     { url: "../foodpics/gurme.jpg", title: t("Gourmet Burger"), description: t("Buffalo meatballs cooked on charcoal fire, onion rings, tomato slices, 40 gr. tenderloin, barbecue sauce") },
@@ -28,10 +25,6 @@ const RestaurantWebsite = () => {
     { url: "../foodpics/eltoro.jpg", title: t("El Toro Burger"), description: t("Chef's meatballs mixed with Mexican spices, broken onion rings, curly lettuce, tomato slices, red pepper, jalapeno pepper, hot sauce") },
     { url: "../foodpics/ottoman.jpg", title: t("Ottoman Burger"), description: t("Butcher's baton sausage, curly lettuce, tomato slices, diced pickles, onion rings, matchstick potato chips, ranch sauce") },
     { url: "../foodpics/grilled.jpg", title: t("Grilled Chicken Burger"), description: t("Grilled chicken thigh with barbecue flavor, curly lettuce, onion rings, tomato slices, pickles, ranch sauce") },
-
-
-    // TODO: more burgers to be added
-    // finish their entire menu by hand...
   ];
 
   useEffect(() => {
