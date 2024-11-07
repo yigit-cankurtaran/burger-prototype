@@ -84,7 +84,19 @@ const resources = {
       "Our chefs use only the freshest ingredients to create mouth-watering dishes that will leave you coming back for more.": "Nos chefs n'utilisent que les ingrédients les plus frais pour créer des plats délicieux qui vous feront revenir encore et encore.",
       "Contact Us": "Contactez-Nous",
       "Have any questions or feedback? We'd love to hear from you!": "Vous avez des questions ou des commentaires ? Nous serions ravis de vous entendre !",
-      "2024 Yiğit Cankurtaran. All rights reserved.": "2024 Yiğit Cankurtaran. Tous droits réservés."
+      "2024 Yiğit Cankurtaran. All rights reserved.": "2024 Yiğit Cankurtaran. Tous droits réservés.",
+      "2 pieces of Chef's Buffalo meatballs, 2 pieces of cheddar cheese, caramelized mushrooms, caramelized onions, french fries, special Chef's sauce": "2 pièces de boulettes de viande de Buffalo du Chef, 2 pièces de fromage cheddar, champignons caramélisés, oignons caramélisés, frites, sauce spéciale du Chef",
+      "Buffalo meatballs cooked on charcoal fire, onion rings, tomato slices, 40 gr. tenderloin, barbecue sauce": "Boulettes de viande de Buffalo cuites au feu de charbon, rondelles d'oignon, tranches de tomate, 40 gr. de filet mignon, sauce barbecue",
+      "150 gr. crispy chicken thigh, curly lettuce, onion rings, tomato slices, crispy pickles, ranch sauce": "150 gr. de cuisse de poulet croustillante, laitue frisée, rondelles d'oignon, tranches de tomate, cornichons croustillants, sauce ranch",
+      "Homemade meatballs, curly lettuce, onion rings, diced tomato slices, cheddar cheese, sauce, sliced pickles, ranch sauce": "Boulettes de viande maison, laitue frisée, rondelles d'oignon, tranches de tomate en dés, fromage cheddar, sauce, cornichons tranchés, sauce ranch",
+      "Chef's meatballs, curly lettuce, onion rings, tomato slices, pickles, ranch sauce": "Boulettes de viande du Chef, laitue frisée, rondelles d'oignon, tranches de tomate, cornichons, sauce ranch",
+      "Butcher's meatballs, butcher's sausage, onion rings, two slices of tomato, sweet red pepper, barbecue sauce": "Boulettes de viande du boucher, saucisse du boucher, rondelles d'oignon, deux tranches de tomate, poivron rouge doux, sauce barbecue",
+      "Homemade meatballs, kolot cheese, onion rings, tomato slices, curly lettuce, ranch sauce": "Boulettes de viande maison, fromage kolot, rondelles d'oignon, tranches de tomate, laitue frisée, sauce ranch",
+      "Chef's meatballs, cheddar cheese, ranch sauce, ham, egg": "Boulettes de viande du Chef, fromage cheddar, sauce ranch, jambon, œuf",
+      "Meatballs cooked on charcoal, lettuce pieces, onion rings, tomato slices, pickle pieces, grilled halloumi cheese, mixed sauce": "Boulettes de viande cuites au charbon, morceaux de laitue, rondelles d'oignon, tranches de tomate, morceaux de cornichon, fromage halloumi grillé, sauce mixte",
+      "Chef's meatballs mixed with Mexican spices, broken onion rings, curly lettuce, tomato slices, red pepper, jalapeno pepper, hot sauce": "Boulettes de viande du Chef mélangées avec des épices mexicaines, rondelles d'oignon cassées, laitue frisée, tranches de tomate, poivron rouge, piment jalapeno, sauce piquante",
+      "Butcher's baton sausage, curly lettuce, tomato slices, diced pickles, onion rings, matchstick potato chips, ranch sauce": "Saucisse bâton du boucher, laitue frisée, tranches de tomate, cornichons en dés, rondelles d'oignon, chips de pommes de terre allumettes, sauce ranch",
+      "Grilled chicken thigh with barbecue flavor, curly lettuce, onion rings, tomato slices, pickles, ranch sauce": "Cuisse de poulet grillée avec saveur barbecue, laitue frisée, rondelles d'oignon, tranches de tomate, cornichons, sauce ranch",
     }
   },
   ru: {
@@ -104,7 +116,19 @@ const resources = {
       "Our chefs use only the freshest ingredients to create mouth-watering dishes that will leave you coming back for more.": "Наши повара используют только самые свежие ингредиенты для создания аппетитных блюд, которые заставят вас возвращаться снова и снова.",
       "Contact Us": "Свяжитесь с Нами",
       "Have any questions or feedback? We'd love to hear from you!": "Есть вопросы или отзывы? Мы будем рады услышать вас!",
-      "2024 Yiğit Cankurtaran. All rights reserved.": "2024 Yiğit Cankurtaran. Все права защищены."
+      "2024 Yiğit Cankurtaran. All rights reserved.": "2024 Yiğит Cankurtaran. Все права защищены.",
+      "2 pieces of Chef's Buffalo meatballs, 2 pieces of cheddar cheese, caramelized mushrooms, caramelized onions, french fries, special Chef's sauce": "2 кусочка буйволиных котлет от шефа, 2 кусочка сыра чеддер, карамелизированные грибы, карамелизированный лук, картофель фри, специальный соус от шефа",
+      "Buffalo meatballs cooked on charcoal fire, onion rings, tomato slices, 40 gr. tenderloin, barbecue sauce": "Буйволиные котлеты, приготовленные на углях, кольца лука, ломтики помидора, 40 гр. вырезки, барбекю соус",
+      "150 gr. crispy chicken thigh, curly lettuce, onion rings, tomato slices, crispy pickles, ranch sauce": "150 гр. хрустящего куриного бедра, кудрявая салат, кольца лука, ломтики помидора, хрустящие огурцы, соус ранч",
+      "Homemade meatballs, curly lettuce, onion rings, diced tomato slices, cheddar cheese, sauce, sliced pickles, ranch sauce": "Домашние котлеты, кудрявая салат, кольца лука, нарезанные кубиками ломтики помидора, сыр чеддер, соус, нарезанные огурцы, соус ранч",
+      "Chef's meatballs, curly lettuce, onion rings, tomato slices, pickles, ranch sauce": "Котлеты от шефа, кудрявая салат, кольца лука, ломтики помидора, огурцы, соус ранч",
+      "Butcher's meatballs, butcher's sausage, onion rings, two slices of tomato, sweet red pepper, barbecue sauce": "Котлеты мясника, колбаса мясника, кольца лука, два ломтика помидора, сладкий красный перец, барбекю соус",
+      "Homemade meatballs, kolot cheese, onion rings, tomato slices, curly lettuce, ranch sauce": "Домашние котлеты, сыр колот, кольца лука, ломтики помидора, кудрявая салат, соус ранч",
+      "Chef's meatballs, cheddar cheese, ranch sauce, ham, egg": "Котлеты от шефа, сыр чеддер, соус ранч, ветчина, яйцо",
+      "Meatballs cooked on charcoal, lettuce pieces, onion rings, tomato slices, pickle pieces, grilled halloumi cheese, mixed sauce": "Котлеты, приготовленные на углях, кусочки салата, кольца лука, ломтики помидора, кусочки огурца, жареный халлуми, смешанный соус",
+      "Chef's meatballs mixed with Mexican spices, broken onion rings, curly lettuce, tomato slices, red pepper, jalapeno pepper, hot sauce": "Котлеты от шефа, смешанные с мексиканскими специями, сломанные кольца лука, кудрявая салат, ломтики помидора, красный перец, перец халапеньо, острый соус",
+      "Butcher's baton sausage, curly lettuce, tomato slices, diced pickles, onion rings, matchstick potato chips, ranch sauce": "Колбаса мясника, кудрявая салат, ломтики помидора, нарезанные кубиками огурцы, кольца лука, картофельные чипсы, соус ранч",
+      "Grilled chicken thigh with barbecue flavor, curly lettuce, onion rings, tomato slices, pickles, ranch sauce": "Куриное бедро на гриле с вкусом барбекю, кудрявая салат, кольца лука, ломтики помидора, огурцы, соус ранч",
     }
   },
   ar: {
@@ -124,7 +148,19 @@ const resources = {
       "Our chefs use only the freshest ingredients to create mouth-watering dishes that will leave you coming back for more.": "يستخدم طهاتنا فقط المكونات الطازجة لخلق أطباق لذيذة ستجعلك تعود للمزيد.",
       "Contact Us": "اتصل بنا",
       "Have any questions or feedback? We'd love to hear from you!": "هل لديك أي أسئلة أو ملاحظات؟ نود أن نسمع منك!",
-      "2024 Yiğit Cankurtaran. All rights reserved.": "2024 Yiğit Cankurtaran. جميع الحقوق محفوظة."
+      "2024 Yiğit Cankurtaran. All rights reserved.": "2024 Yiğit Cankurtaran. جميع الحقوق محفوظة.",
+      "2 pieces of Chef's Buffalo meatballs, 2 pieces of cheddar cheese, caramelized mushrooms, caramelized onions, french fries, special Chef's sauce": "قطعتان من كرات لحم الجاموس الخاصة بالشيف، قطعتان من جبن الشيدر، فطر مكرمل، بصل مكرمل، بطاطس مقلية، صلصة خاصة بالشيف",
+      "Buffalo meatballs cooked on charcoal fire, onion rings, tomato slices, 40 gr. tenderloin, barbecue sauce": "كرات لحم الجاموس المطبوخة على الفحم، حلقات البصل، شرائح الطماطم، 40 غرام من لحم الخاصرة، صلصة باربيكيو",
+      "150 gr. crispy chicken thigh, curly lettuce, onion rings, tomato slices, crispy pickles, ranch sauce": "150 غرام من فخذ الدجاج المقرمش، خس مجعد، حلقات البصل، شرائح الطماطم، مخللات مقرمشة، صلصة رانش",
+      "Homemade meatballs, curly lettuce, onion rings, diced tomato slices, cheddar cheese, sauce, sliced pickles, ranch sauce": "كرات لحم منزلية، خس مجعد، حلقات البصل، شرائح الطماطم المقطعة، جبن شيدر، صلصة، مخللات مقطعة، صلصة رانش",
+      "Chef's meatballs, curly lettuce, onion rings, tomato slices, pickles, ranch sauce": "كرات لحم الشيف، خس مجعد، حلقات البصل، شرائح الطماطم، مخللات، صلصة رانش",
+      "Butcher's meatballs, butcher's sausage, onion rings, two slices of tomato, sweet red pepper, barbecue sauce": "كرات لحم الجزار، سجق الجزار، حلقات البصل، شريحتان من الطماطم، فلفل أحمر حلو، صلصة باربيكيو",
+      "Homemade meatballs, kolot cheese, onion rings, tomato slices, curly lettuce, ranch sauce": "كرات لحم منزلية، جبن كولوت، حلقات البصل، شرائح الطماطم، خس مجعد، صلصة رانش",
+      "Chef's meatballs, cheddar cheese, ranch sauce, ham, egg": "كرات لحم الشيف، جبن شيدر، صلصة رانش، لحم خنزير، بيضة",
+      "Meatballs cooked on charcoal, lettuce pieces, onion rings, tomato slices, pickle pieces, grilled halloumi cheese, mixed sauce": "كرات لحم مطبوخة على الفحم، قطع خس، حلقات البصل، شرائح الطماطم، قطع مخلل، جبن حلومي مشوي، صلصة مختلطة",
+      "Chef's meatballs mixed with Mexican spices, broken onion rings, curly lettuce, tomato slices, red pepper, jalapeno pepper, hot sauce": "كرات لحم الشيف الممزوجة بالتوابل المكسيكية، حلقات البصل المكسورة، خس مجعد، شرائح الطماطم، فلفل أحمر، فلفل هالبينو، صلصة حارة",
+      "Butcher's baton sausage, curly lettuce, tomato slices, diced pickles, onion rings, matchstick potato chips, ranch sauce": "سجق باتون الجزار، خس مجعد، شرائح الطماطم، مخللات مقطعة، حلقات البصل، رقائق البطاطس، صلصة رانش",
+      "Grilled chicken thigh with barbecue flavor, curly lettuce, onion rings, tomato slices, pickles, ranch sauce": "فخذ دجاج مشوي بنكهة الباربيكيو، خس مجعد، حلقات البصل، شرائح الطماطم، مخللات، صلصة رانش",
     }
   }
 };
