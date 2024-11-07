@@ -16,18 +16,18 @@ const RestaurantWebsite = () => {
   // ingredients once yemeksepeti reopens
   // then translate them
   const burgers = [
-    { url: "../foodpics/chefsburger.jpg", title: t("Chef's Burger"), description: t("testing chef") },
-    { url: "../foodpics/gurme.jpg", title: t("Gourmet Burger"), description: t("testing gourmet") },
-    { url: "../foodpics/tavuk.jpg", title: t("Crispy Chicken Burger"), description: t("testing chicken") },
-    { url: "../foodpics/cheeseburger.jpg", title: t("Cheeseburger"), description: t("testing cheese") },
-    { url: "../foodpics/classicburger.jpg", title: t("Classic Burger"), description: t("testing classic") },
-    { url: "../foodpics/barbecue.jpg", title: t("Barbecue Burger"), description: t("testing barbecue") },
-    { url: "../foodpics/anadolu.jpg", title: t("Anatolia Burger"), description: t("testing anatolia") },
-    { url: "../foodpics/eggy.jpg", title: t("Eggy Burger"), description: t("testing eggy") },
-    { url: "../foodpics/hellim.jpg", title: t("Hellim Burger"), description: t("testing hellim") },
-    { url: "../foodpics/eltoro.jpg", title: t("El Toro Burger"), description: t("testing toro") },
-    { url: "../foodpics/ottoman.jpg", title: t("Ottoman Burger"), description: t("testing ottoman") },
-    { url: "../foodpics/grilled.jpg", title: t("Grilled Chicken Burger"), description: t("testing grilled") },
+    { url: "../foodpics/chefsburger.jpg", title: t("Chef's Burger"), description: t("2 pieces of Chef's Buffalo meatballs, 2 pieces of cheddar cheese, caramelized mushrooms, caramelized onions, french fries, special Chef's sauce") },
+    { url: "../foodpics/gurme.jpg", title: t("Gourmet Burger"), description: t("Buffalo meatballs cooked on charcoal fire, onion rings, tomato slices, 40 gr. tenderloin, barbecue sauce") },
+    { url: "../foodpics/tavuk.jpg", title: t("Crispy Chicken Burger"), description: t("150 gr. crispy chicken thigh, curly lettuce, onion rings, tomato slices, crispy pickles, ranch sauce") },
+    { url: "../foodpics/cheeseburger.jpg", title: t("Cheeseburger"), description: t("Homemade meatballs, curly lettuce, onion rings, diced tomato slices, cheddar cheese, sauce, sliced pickles, ranch sauce") },
+    { url: "../foodpics/classicburger.jpg", title: t("Classic Burger"), description: t("Chef's meatballs, curly lettuce, onion rings, tomato slices, pickles, ranch sauce") },
+    { url: "../foodpics/barbecue.jpg", title: t("Barbecue Burger"), description: t("Butcher's meatballs, butcher's sausage, onion rings, two slices of tomato, sweet red pepper, barbecue sauce") },
+    { url: "../foodpics/anadolu.jpg", title: t("Anatolia Burger"), description: t("Homemade meatballs, kolot cheese, onion rings, tomato slices, curly lettuce, ranch sauce") },
+    { url: "../foodpics/eggy.jpg", title: t("Eggy Burger"), description: t("Chef's meatballs, cheddar cheese, ranch sauce, ham, egg") },
+    { url: "../foodpics/hellim.jpg", title: t("Hellim Burger"), description: t("Meatballs cooked on charcoal, lettuce pieces, onion rings, tomato slices, pickle pieces, grilled halloumi cheese, mixed sauce") },
+    { url: "../foodpics/eltoro.jpg", title: t("El Toro Burger"), description: t("Chef's meatballs mixed with Mexican spices, broken onion rings, curly lettuce, tomato slices, red pepper, jalapeno pepper, hot sauce") },
+    { url: "../foodpics/ottoman.jpg", title: t("Ottoman Burger"), description: t("Butcher's baton sausage, curly lettuce, tomato slices, diced pickles, onion rings, matchstick potato chips, ranch sauce") },
+    { url: "../foodpics/grilled.jpg", title: t("Grilled Chicken Burger"), description: t("Grilled chicken thigh with barbecue flavor, curly lettuce, onion rings, tomato slices, pickles, ranch sauce") },
 
 
     // TODO: more burgers to be added
