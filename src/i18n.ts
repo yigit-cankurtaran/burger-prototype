@@ -2,8 +2,6 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-// translations work, just need to delete storage on localhost
-
 const resources = {
   tr: {
     translation: {
@@ -178,5 +176,9 @@ i18n
       escapeValue: false
     }
   });
+
+i18n.on('initialized', (options) => {
+  console.log('i18n initializedwith ', options);
+});
 
 export default i18n;

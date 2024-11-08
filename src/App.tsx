@@ -1,14 +1,10 @@
-import BurgerRestaurantWebsite from './BurgerRestaurantWebsite.tsx'
-// i don't even know why i have this config here
-// const theme = {
-//   config: {
-//     initialColorMode: 'dark',
-//     useSystemColorMode: true
-//   }
-// }
+import { lazy, Suspense } from "react";
+const BurgerRestaurantWebsite = lazy(() => import("@/BurgerRestaurantWebsite"));
 
 export default function App() {
   return (
-    <BurgerRestaurantWebsite />
-  )
+    <Suspense fallback={<div>Loading...</div>}>
+      <BurgerRestaurantWebsite />
+    </Suspense>
+  );
 }
