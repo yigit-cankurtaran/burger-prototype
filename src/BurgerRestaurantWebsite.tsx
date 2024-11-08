@@ -72,6 +72,7 @@ const RestaurantWebsite = () => {
                 src={slide.url}
                 alt={slide.title}
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-black/30" />
             </div>
@@ -117,6 +118,7 @@ const RestaurantWebsite = () => {
                 src={burger.url}
                 alt={burger.title}
                 className="w-full h-48 object-cover rounded-lg mb-4"
+                loading="lazy"
               />
               <h3 className="text-xl font-light mb-2">{burger.title}</h3>
               <p className="text-gray-600">
