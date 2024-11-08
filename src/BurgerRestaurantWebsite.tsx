@@ -7,24 +7,27 @@ const RestaurantWebsite = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    { url: "../foodpics/chefsburger.jpg", title: t("Signature Burgers") },
-    { url: "../foodpics/gurme.jpg", title: t("Fresh Ingredients") },
-    { url: "../foodpics/tavuk.jpg", title: t("Cozy Atmosphere") },
+    { url: "https://utfs.io/f/RGBMPHafKzagFTkzz4r93MdughzF2KovnXHIwNtk1m0aC865", title: t("Signature Burgers") },
+    { url: "https://utfs.io/f/RGBMPHafKzagrLH96O0Xv5n7DcMzkHFNr6hlAsK0YqmVoByf", title: t("Fresh Ingredients") },
+    { url: "https://utfs.io/f/RGBMPHafKzagJQ9UARWgY2auvO5XKyAw3MeJZVDHht40cQU7", title: t("Cozy Atmosphere") },
   ];
 
   const burgers = [
-    { url: "../foodpics/chefsburger.jpg", title: t("Chef's Burger"), description: t("2 pieces of Chef's Buffalo meatballs, 2 pieces of cheddar cheese, caramelized mushrooms, caramelized onions, french fries, special Chef's sauce") },
-    { url: "../foodpics/gurme.jpg", title: t("Gourmet Burger"), description: t("Buffalo meatballs cooked on charcoal fire, onion rings, tomato slices, 40 gr. tenderloin, barbecue sauce") },
-    { url: "../foodpics/tavuk.jpg", title: t("Crispy Chicken Burger"), description: t("150 gr. crispy chicken thigh, curly lettuce, onion rings, tomato slices, crispy pickles, ranch sauce") },
-    { url: "../foodpics/cheeseburger.jpg", title: t("Cheeseburger"), description: t("Homemade meatballs, curly lettuce, onion rings, diced tomato slices, cheddar cheese, sauce, sliced pickles, ranch sauce") },
-    { url: "../foodpics/classicburger.jpg", title: t("Classic Burger"), description: t("Chef's meatballs, curly lettuce, onion rings, tomato slices, pickles, ranch sauce") },
-    { url: "../foodpics/barbecue.jpg", title: t("Barbecue Burger"), description: t("Butcher's meatballs, butcher's sausage, onion rings, two slices of tomato, sweet red pepper, barbecue sauce") },
-    { url: "../foodpics/anadolu.jpg", title: t("Anatolia Burger"), description: t("Homemade meatballs, kolot cheese, onion rings, tomato slices, curly lettuce, ranch sauce") },
-    { url: "../foodpics/eggy.jpg", title: t("Eggy Burger"), description: t("Chef's meatballs, cheddar cheese, ranch sauce, ham, egg") },
-    { url: "../foodpics/hellim.jpg", title: t("Hellim Burger"), description: t("Meatballs cooked on charcoal, lettuce pieces, onion rings, tomato slices, pickle pieces, grilled halloumi cheese, mixed sauce") },
-    { url: "../foodpics/eltoro.jpg", title: t("El Toro Burger"), description: t("Chef's meatballs mixed with Mexican spices, broken onion rings, curly lettuce, tomato slices, red pepper, jalapeno pepper, hot sauce") },
-    { url: "../foodpics/ottoman.jpg", title: t("Ottoman Burger"), description: t("Butcher's baton sausage, curly lettuce, tomato slices, diced pickles, onion rings, matchstick potato chips, ranch sauce") },
-    { url: "../foodpics/grilled.jpg", title: t("Grilled Chicken Burger"), description: t("Grilled chicken thigh with barbecue flavor, curly lettuce, onion rings, tomato slices, pickles, ranch sauce") },
+    { url: "https://utfs.io/f/RGBMPHafKzagFTkzz4r93MdughzF2KovnXHIwNtk1m0aC865", title: t("Chef's Burger"), description: t("2 pieces of Chef's Buffalo meatballs, 2 pieces of cheddar cheese, caramelized mushrooms, caramelized onions, french fries, special Chef's sauce") },
+    { url: "https://utfs.io/f/RGBMPHafKzagrLH96O0Xv5n7DcMzkHFNr6hlAsK0YqmVoByf", title: t("Gourmet Burger"), description: t("Buffalo meatballs cooked on charcoal fire, onion rings, tomato slices, 40 gr. tenderloin, barbecue sauce") },
+    { url: "https://utfs.io/f/RGBMPHafKzagJQ9UARWgY2auvO5XKyAw3MeJZVDHht40cQU7", title: t("Crispy Chicken Burger"), description: t("150 gr. crispy chicken thigh, curly lettuce, onion rings, tomato slices, crispy pickles, ranch sauce") },
+    { url: "https://utfs.io/f/RGBMPHafKzag1vHVYqLlwQMcNr8WuTUezhKmX7xGJIZfpCdD", title: t("Cheeseburger"), description: t("Homemade meatballs, curly lettuce, onion rings, diced tomato slices, cheddar cheese, sauce, sliced pickles, ranch sauce") },
+    { url: "https://utfs.io/f/RGBMPHafKzag5w5lqEVnlxXWDvk8ENO1tAjgzKqUeRH6Pbfc", title: t("Classic Burger"), description: t("Chef's meatballs, curly lettuce, onion rings, tomato slices, pickles, ranch sauce") },
+    { url: "https://utfs.io/f/RGBMPHafKzag8zsEfaW2uDgQzK4lS2HTAaXYVECsndRp3m5t", title: t("Barbecue Burger"), description: t("Butcher's meatballs, butcher's sausage, onion rings, two slices of tomato, sweet red pepper, barbecue sauce") },
+    { url: "https://utfs.io/f/RGBMPHafKzagFHuFgIr93MdughzF2KovnXHIwNtk1m0aC865", title: t("Anatolia Burger"), description: t("Homemade meatballs, kolot cheese, onion rings, tomato slices, curly lettuce, ranch sauce") },
+    { url: "https://utfs.io/f/RGBMPHafKzagDfc4XvTMLrNdgWqf0Y4pAxEnyOkUemTGS3Ru", title: t("Eggy Burger"), description: t("Chef's meatballs, cheddar cheese, ranch sauce, ham, egg") },
+    { url: "https://utfs.io/f/RGBMPHafKzagPm38bDZcGkvA5oKHmZsz4fT2N6E8uMayjbIR", title: t("Hellim Burger"), description: t("Meatballs cooked on charcoal, lettuce pieces, onion rings, tomato slices, pickle pieces, grilled halloumi cheese, mixed sauce") },
+    { url: "https://utfs.io/f/RGBMPHafKzagLDmkyJjKPUHMmAifxquQ4IYnwy5FC6k0veOB", title: t("El Toro Burger"), description: t("Chef's meatballs mixed with Mexican spices, broken onion rings, curly lettuce, tomato slices, red pepper, jalapeno pepper, hot sauce") },
+    { url: "https://utfs.io/f/RGBMPHafKzag6IL1TNCkyUfDNxE3JQuhLjOAa8GgtCScrKl9", title: t("Ottoman Burger"), description: t("Butcher's baton sausage, curly lettuce, tomato slices, diced pickles, onion rings, matchstick potato chips, ranch sauce") },
+    { url: "https://utfs.io/f/RGBMPHafKzagBGDLKawBpyAvm9NHfuSRDM7rXjiFkg6slzP0", title: t("Grilled Chicken Burger"), description: t("Grilled chicken thigh with barbecue flavor, curly lettuce, onion rings, tomato slices, pickles, ranch sauce") },
+    // TODO: if it doesn't get that much use you can just switch back to public
+    // public gets too many edge requests, i had about 100 just off of my own thing
+    // and it only gives me 1m requests a month
   ];
 
   useEffect(() => {
@@ -154,6 +157,7 @@ const RestaurantWebsite = () => {
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-6 text-center">
           <p className="font-light">&copy; {t("2024 Yiğit Cankurtaran. All rights reserved.")}</p>
+          {/* might delete the copyright thingy depending on status */}
         </div>
       </footer>
     </div>
