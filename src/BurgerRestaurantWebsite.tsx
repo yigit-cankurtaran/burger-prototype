@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
@@ -6,29 +6,27 @@ const RestaurantWebsite = () => {
   const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const slides = [
-    { url: "https://utfs.io/f/RGBMPHafKzagFTkzz4r93MdughzF2KovnXHIwNtk1m0aC865", title: t("Signature Burgers") },
-    { url: "https://utfs.io/f/RGBMPHafKzagrLH96O0Xv5n7DcMzkHFNr6hlAsK0YqmVoByf", title: t("Fresh Ingredients") },
-    { url: "https://utfs.io/f/RGBMPHafKzagJQ9UARWgY2auvO5XKyAw3MeJZVDHht40cQU7", title: t("Cozy Atmosphere") },
-  ];
+  // Memoize the slides and burgers arrays to prevent recreating on each render
+  const slides = useMemo(() => [
+    { url: "/foodpics/1.jpg", title: t("Signature Burgers") },
+    { url: "/foodpics/2.jpg", title: t("Fresh Ingredients") },
+    { url: "/foodpics/3.jpg", title: t("Cozy Atmosphere") },
+  ], [t]);
 
-  const burgers = [
-    { url: "https://utfs.io/f/RGBMPHafKzagFTkzz4r93MdughzF2KovnXHIwNtk1m0aC865", title: t("Chef's Burger"), description: t("2 pieces of Chef's Buffalo meatballs, 2 pieces of cheddar cheese, caramelized mushrooms, caramelized onions, french fries, special Chef's sauce") },
-    { url: "https://utfs.io/f/RGBMPHafKzagrLH96O0Xv5n7DcMzkHFNr6hlAsK0YqmVoByf", title: t("Gourmet Burger"), description: t("Buffalo meatballs cooked on charcoal fire, onion rings, tomato slices, 40 gr. tenderloin, barbecue sauce") },
-    { url: "https://utfs.io/f/RGBMPHafKzagJQ9UARWgY2auvO5XKyAw3MeJZVDHht40cQU7", title: t("Crispy Chicken Burger"), description: t("150 gr. crispy chicken thigh, curly lettuce, onion rings, tomato slices, crispy pickles, ranch sauce") },
-    { url: "https://utfs.io/f/RGBMPHafKzag1vHVYqLlwQMcNr8WuTUezhKmX7xGJIZfpCdD", title: t("Cheeseburger"), description: t("Homemade meatballs, curly lettuce, onion rings, diced tomato slices, cheddar cheese, sauce, sliced pickles, ranch sauce") },
-    { url: "https://utfs.io/f/RGBMPHafKzag5w5lqEVnlxXWDvk8ENO1tAjgzKqUeRH6Pbfc", title: t("Classic Burger"), description: t("Chef's meatballs, curly lettuce, onion rings, tomato slices, pickles, ranch sauce") },
-    { url: "https://utfs.io/f/RGBMPHafKzag8zsEfaW2uDgQzK4lS2HTAaXYVECsndRp3m5t", title: t("Barbecue Burger"), description: t("Butcher's meatballs, butcher's sausage, onion rings, two slices of tomato, sweet red pepper, barbecue sauce") },
-    { url: "https://utfs.io/f/RGBMPHafKzagFHuFgIr93MdughzF2KovnXHIwNtk1m0aC865", title: t("Anatolia Burger"), description: t("Homemade meatballs, kolot cheese, onion rings, tomato slices, curly lettuce, ranch sauce") },
-    { url: "https://utfs.io/f/RGBMPHafKzagDfc4XvTMLrNdgWqf0Y4pAxEnyOkUemTGS3Ru", title: t("Eggy Burger"), description: t("Chef's meatballs, cheddar cheese, ranch sauce, ham, egg") },
-    { url: "https://utfs.io/f/RGBMPHafKzagPm38bDZcGkvA5oKHmZsz4fT2N6E8uMayjbIR", title: t("Hellim Burger"), description: t("Meatballs cooked on charcoal, lettuce pieces, onion rings, tomato slices, pickle pieces, grilled halloumi cheese, mixed sauce") },
-    { url: "https://utfs.io/f/RGBMPHafKzagLDmkyJjKPUHMmAifxquQ4IYnwy5FC6k0veOB", title: t("El Toro Burger"), description: t("Chef's meatballs mixed with Mexican spices, broken onion rings, curly lettuce, tomato slices, red pepper, jalapeno pepper, hot sauce") },
-    { url: "https://utfs.io/f/RGBMPHafKzag6IL1TNCkyUfDNxE3JQuhLjOAa8GgtCScrKl9", title: t("Ottoman Burger"), description: t("Butcher's baton sausage, curly lettuce, tomato slices, diced pickles, onion rings, matchstick potato chips, ranch sauce") },
-    { url: "https://utfs.io/f/RGBMPHafKzagBGDLKawBpyAvm9NHfuSRDM7rXjiFkg6slzP0", title: t("Grilled Chicken Burger"), description: t("Grilled chicken thigh with barbecue flavor, curly lettuce, onion rings, tomato slices, pickles, ranch sauce") },
-    // TODO: if it doesn't get that much use you can just switch back to public
-    // public gets too many edge requests, i had about 100 just off of my own thing
-    // and it only gives me 1m requests a month
-  ];
+  const burgers = useMemo(() => [
+    { url: "/foodpics/1.jpg", title: t("Chef's Burger"), description: t("2 pieces of Chef's Buffalo meatballs, 2 pieces of cheddar cheese, caramelized mushrooms, caramelized onions, french fries, special Chef's sauce") },
+    { url: "/foodpics/2.jpg", title: t("Gourmet Burger"), description: t("Buffalo meatballs cooked on charcoal fire, onion rings, tomato slices, 40 gr. tenderloin, barbecue sauce") },
+    { url: "/foodpics/3.jpg", title: t("Crispy Chicken Burger"), description: t("150 gr. crispy chicken thigh, curly lettuce, onion rings, tomato slices, crispy pickles, ranch sauce") },
+    { url: "/foodpics/4.jpg", title: t("Cheeseburger"), description: t("Homemade meatballs, curly lettuce, onion rings, diced tomato slices, cheddar cheese, sauce, sliced pickles, ranch sauce") },
+    { url: "/foodpics/5.jpg", title: t("Classic Burger"), description: t("Chef's meatballs, curly lettuce, onion rings, tomato slices, pickles, ranch sauce") },
+    { url: "/foodpics/6.jpg", title: t("Barbecue Burger"), description: t("Butcher's meatballs, butcher's sausage, onion rings, two slices of tomato, sweet red pepper, barbecue sauce") },
+    { url: "/foodpics/7.jpg", title: t("Anatolia Burger"), description: t("Homemade meatballs, kolot cheese, onion rings, tomato slices, curly lettuce, ranch sauce") },
+    { url: "/foodpics/8.jpg", title: t("Eggy Burger"), description: t("Chef's meatballs, cheddar cheese, ranch sauce, ham, egg") },
+    { url: "/foodpics/9.jpg", title: t("Hellim Burger"), description: t("Meatballs cooked on charcoal, lettuce pieces, onion rings, tomato slices, pickle pieces, grilled halloumi cheese, mixed sauce") },
+    { url: "/foodpics/10.jpg", title: t("El Toro Burger"), description: t("Chef's meatballs mixed with Mexican spices, broken onion rings, curly lettuce, tomato slices, red pepper, jalapeno pepper, hot sauce") },
+    { url: "/foodpics/11.jpg", title: t("Ottoman Burger"), description: t("Butcher's baton sausage, curly lettuce, tomato slices, diced pickles, onion rings, matchstick potato chips, ranch sauce") },
+    { url: "/foodpics/12.jpg", title: t("Grilled Chicken Burger"), description: t("Grilled chicken thigh with barbecue flavor, curly lettuce, onion rings, tomato slices, pickles, ranch sauce") },
+  ], [t]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -44,7 +42,7 @@ const RestaurantWebsite = () => {
       <nav className="fixed w-full z-50 bg-white/80 backdrop-blur-sm">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-light">Chef's Buffalo Burger</h1>
+            <h1 className="text-2xl font-light">Chef's Burger</h1>
             <div className="space-x-8 text-sm">
               <a href="#menu" className="hover:text-gray-600 transition">
                 {t("MENU")}
@@ -68,12 +66,15 @@ const RestaurantWebsite = () => {
               className={`absolute inset-0 transition-opacity duration-1000
                 ${index === currentSlide ? "opacity-100" : "opacity-0"}`}
             >
-              <img
-                src={slide.url}
-                alt={slide.title}
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
+              {(index === currentSlide || index === (currentSlide + 1) % slides.length) && (
+                <img
+                  src={slide.url}
+                  alt={slide.title}
+                  className="w-full h-full object-cover"
+                  loading={index === 0 ? "eager" : "lazy"}
+                  fetchPriority={index === 0 ? "high" : "low"}
+                />
+              )}
               <div className="absolute inset-0 bg-black/30" />
             </div>
           ))}
@@ -104,7 +105,6 @@ const RestaurantWebsite = () => {
         </div>
       </div>
 
-
       <section id="menu" className="container mx-auto px-6 py-24">
         <h2 className="text-4xl font-light mb-16 text-center">{t("Our Menu")}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -119,16 +119,14 @@ const RestaurantWebsite = () => {
                 alt={burger.title}
                 className="w-full h-48 object-cover rounded-lg mb-4"
                 loading="lazy"
+                fetchPriority="low"
               />
               <h3 className="text-xl font-light mb-2">{burger.title}</h3>
-              <p className="text-gray-600">
-                {burger.description}
-              </p>
+              <p className="text-gray-600">{burger.description}</p>
             </motion.div>
           ))}
         </div>
       </section>
-
 
       <section id="about" className="container mx-auto px-6 py-24 bg-gray-100">
         <h2 className="text-4xl font-light mb-16 text-center">{t("About Us")}</h2>
@@ -148,18 +146,15 @@ const RestaurantWebsite = () => {
           <p className="text-lg font-light mb-4">
             {t("Have any questions or feedback? We'd love to hear from you!")}
           </p>
-          {/* phone number and email address */}
           <p className="text-lg font-light">phone number</p>
           <a className="text-green-600" href="mailto:random@mail.com">e-mail</a>
           <p className="text-pretty text-lg font-extralight">address</p>
         </div>
       </section>
 
-
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-6 text-center">
-          <p className="font-light">&copy; {t("2024 Yiğit Cankurtaran. All rights reserved.")}</p>
-          {/* might delete the copyright thingy depending on status */}
+          <p className="font-light">{t("2024 Yiğit Cankurtaran. All rights reserved.")}</p>
         </div>
       </footer>
     </div>
@@ -167,3 +162,4 @@ const RestaurantWebsite = () => {
 };
 
 export default RestaurantWebsite;
+
