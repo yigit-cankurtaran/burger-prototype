@@ -164,11 +164,17 @@ i18n
     detection: {
       order: ['localStorage', 'navigator'],
       caches: ['localStorage'],
-      lookupLocalStorage: 'i18nextLng'
+      lookupLocalStorage: 'i18nextLng',
+      cookieMinutes: 365 * 24 * 60, // caching for 1 year
     },
-    // Load all languages at startup
-    preload: ['en', 'tr', 'fr', 'ru', 'ar'],
-    load: 'all',
+    // Load only default language at start
+    preload: ['tr'],
+    load: 'languageOnly',
+    ns: ['translation'],
+    defaultNS: 'translation',
+    react: {
+      useSuspense: false
+    },
     // Reduce network requests
     partialBundledLanguages: true,
     supportedLngs: ['en', 'tr', 'fr', 'ru', 'ar']
