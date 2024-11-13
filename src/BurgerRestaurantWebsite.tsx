@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
